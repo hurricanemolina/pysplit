@@ -486,9 +486,9 @@ def _monyearstrings(mon, year, mon_dict):
 
     w = '*'
 
-    prv = w + mon_dict[prev_mon][1] + w + str(prev_year) + w
-    nxt = w + mon_dict[next_mon][1] + w + str(next_year) + w
-    now = w + mon_dict[mon][1] + w + str(year) + w
+    prv = w + mon_dict[prev_mon][1] + w + _year2string(prev_year) + w
+    nxt = w + mon_dict[next_mon][1] + w + _year2string(next_year) + w
+    now = w + mon_dict[mon][1] + w + _year2string(year) + w
 
     return prv, nxt, now
 
